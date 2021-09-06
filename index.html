@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restuarant S&A</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <section class="head">
+    <section>
+  
+        <div class="container-nav">
+            <img id="logo" src="Sanda.png" alt="logo">
+            <nav>
+                <ul>
+                    <!-- <li id="webname">  -->
+                    <li class="nav-li">Home</li>
+                    <li class="nav-li">About</li>
+                    <li class="nav-li"><a href="#menu">Menu</a></li>
+                </ul>
+            </nav>
+            <div class="btn-div">
+                <a id="button" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Reservation</a>
+            </div>
+        </div>
+        </div>
+        <div class="container">
+            <h1 class="main-brand">S&A</h1>
+            <div class="tagline">
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium, voluptatum?
+                </p>
+            </div>
+        </div>
+        
+    </section>
+    </section>
+    <section id="menu">
+        
+        <p id="ourmenu">Top Orders</p>
+                
+        <div class="slideshow-container">
+    
+            <div class="mySlides fade">
+              <!-- <div class="numbertext">1 / 3</div> -->
+              <img class="carousel"src="download (1).jpeg" style="width:100%">
+              <div id="special" class="text">Lorem ipsum </div>
+            </div>
+            
+            <div class="mySlides fade">
+              <!-- <div class="numbertext">2 / 3</div> -->
+              <img class="carousel" src="download.jpeg" style="width:100%">
+              <div class="text">Lorem Ipsum</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <!-- <div class="numbertext">3 / 3</div> -->
+              <img class="carousel" src="louis-hansel-xxIcEAhItJ0-unsplash.jpg" style="width:100%">
+              <div id="special" class="text">Lorem Ipsum</div>
+            </div>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+            </div>
+            
+            <script>
+                var slideIndex = 0;
+                showSlides();
+                
+                function showSlides() {
+                  var i;
+                  var slides = document.getElementsByClassName("mySlides");
+                  var dots = document.getElementsByClassName("dot");
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  slideIndex++;
+                  if (slideIndex > slides.length) {slideIndex = 1}    
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                  setTimeout(showSlides, 2000); // Change image every 2 seconds
+                }
+                </script>
+          
+            
+             
+                
+           
+        
+    <!-- <p id="copyright">Copyright Sez and Amanpinjara</p> -->
+    
+    </section>
+
+</body>
+</html>
